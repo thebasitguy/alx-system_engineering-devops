@@ -1,6 +1,7 @@
 # Ensures pip3 is installed
-package { 'python3-pip':
-  ensure => installed,
+package { 'pip3':
+  ensure   => installed,
+  provider => 'pip3',
 }
 
 # Installs Flask
